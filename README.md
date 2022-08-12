@@ -17,3 +17,5 @@ npm run dev
 และสุดท้ายให้ deploy ใน [CMU Personal Webhosting](https://register-myweb.cmu.ac.th/)
 
 (ใส่ URL ที่นี่)
+sandbox link
+https://codesandbox.io/s/busy-dewdney-42pf1o?file=/pages/index.js
