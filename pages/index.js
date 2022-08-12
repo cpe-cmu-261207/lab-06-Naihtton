@@ -8,6 +8,7 @@ import {
 import { useState } from "react";
 import axios from "axios";
 import UserCard from "../components/usercard";
+import UserCardDetail from "../components/UserCardDetail";
 
 export default function Home() {
   const [inputNumber, setInputNumber] = useState(1);
@@ -62,46 +63,6 @@ export default function Home() {
           }
         />
       ))}
-
-      {/* Example of folded UserCard */}
-      <div className="border-bottom">
-        {/* main section */}
-        <div className="d-flex align-items-center p-3">
-          <img
-            src="/profile-placeholder.jpeg"
-            width="90px"
-            class="rounded-circle me-4"
-          />
-          <span className="text-center display-6 me-auto">Name...</span>
-          <IconChevronDown />
-        </div>
-        {/* UserCardDetail is hidden
-         */}
-      </div>
-
-      {/* Example of expanded UserCard */}
-      <div className="border-bottom">
-        {/* main section */}
-        <div className="d-flex align-items-center p-3">
-          <img
-            src="/profile-placeholder.jpeg"
-            width="90px"
-            class="rounded-circle me-4"
-          />
-          <span className="text-center display-6 me-auto">Name...</span>
-          <IconChevronUp />
-        </div>
-
-        {/* UserCardDetail*/}
-        <div className="text-center">
-          <p>
-            <IconMailForward /> Email...
-          </p>
-          <p>
-            <IconMapPins /> Address...
-          </p>
-        </div>
-      </div>
 
       {/* made by section */}
       <p className="text-center mt-3 text-muted fst-italic">
